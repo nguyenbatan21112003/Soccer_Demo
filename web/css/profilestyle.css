@@ -1,0 +1,132 @@
+:root {
+    --primary-text-color: #333;
+    --secondary-text-color: #666;
+    --border-color: #e0e0e0;
+    --edit-link-color: #1877f2;
+    --verified-green: #42b72a;
+    --background-color: #f5f5f5;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    line-height: 1.6;
+}
+
+.personal-info-container {
+    max-width: 800px;
+    margin: 30px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.personal-info-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.profile-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #9c27b0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    position: relative;
+}
+
+.profile-avatar-icon {
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.personal-info-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.personal-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+.edit-mk1{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--edit-link-color);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+.edit-mk2{
+    display: flex;
+    justify-content: flex-end;
+    padding-left: 10px;
+    align-items: center;
+    color: var(--edit-link-color);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+.personal-info-item:last-child {
+    border-bottom: none;
+}
+
+.info-label {
+    color: var(--secondary-text-color);
+    flex-grow: 1;
+}
+
+.info-value {
+    flex-grow: 2;
+    text-align: left;
+}
+
+.edit-link {
+    color: var(--edit-link-color);
+    font-weight: 500;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.edit-link:hover {
+    text-decoration: underline;
+}
+
+.email-verified {
+    background-color: var(--verified-green);
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.info-description {
+    color: var(--secondary-text-color);
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
