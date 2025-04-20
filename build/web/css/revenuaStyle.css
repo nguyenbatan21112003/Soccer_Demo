@@ -1,0 +1,111 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 27, 2025, 8:33:24 PM
+    Author     : bacda
+*/
+
+/* Revenue Report Specific Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--dark-color);
+    background-color: var(--light-color);
+    margin: 0;
+    padding: 20px;
+}
+
+:root {
+    --primary-color: #4CAF50;
+    --secondary-color: #2E7D32;
+    --accent-color: #FFC107;
+    --dark-color: #263238;
+    --light-color: #F5F5F5;
+    --gray-color: #757575;
+    --error-color: #F44336;
+    --success-color: #4CAF50;
+    --border-radius: 8px;
+    --box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --transition: all 0.3s ease;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 30px;
+}
+
+.home-button {
+    display: block;
+    width: 150px;
+    margin: 0 auto 20px;
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: var(--transition);
+}
+
+.home-button:hover {
+    background-color: var(--secondary-color);
+}
+
+.revenue-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    box-shadow: var(--box-shadow);
+}
+
+.revenue-table th {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 12px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.revenue-table td {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.revenue-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.revenue-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    
+    .revenue-table {
+        font-size: 0.9rem;
+    }
+    
+    .home-button {
+        width: 100%;
+    }
+}

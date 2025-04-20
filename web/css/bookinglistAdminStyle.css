@@ -1,0 +1,123 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 26, 2025, 10:34:09 PM
+    Author     : bacda
+*/
+
+/* Định dạng chung cho trang */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Định dạng phần thông báo */
+p {
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+}
+
+/* Container chứa các booking */
+.booking-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Định dạng mỗi booking */
+.booking-card {
+    background-color: white;
+    padding: 15px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+/* CSS chung cho booking-card */
+/* CSS chung cho booking-card */
+.booking-card {
+    background-color: white;
+    padding: 15px;
+    width: 350px;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: background-color 0.3s ease;
+}
+
+/* Nếu trạng thái là Pending thì đổi màu nền thành cam */
+.booking-card.pending {
+    background-color: #FFA500; /* Màu cam */
+}
+
+/* Nếu trạng thái là Rejected thì đổi màu nền thành đỏ */
+.booking-card.rejected {
+    background-color: #FF4C4C; /* Màu đỏ */
+    color: white; /* Chữ màu trắng cho dễ đọc */
+}
+
+/* Nếu trạng thái là Confirmed thì đổi màu nền thành xanh lá */
+.booking-card.confirmed {
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white; /* Chữ màu trắng cho dễ đọc */
+}
+
+
+/* Các input text */
+.booking-card input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Nút Accept và Reject */
+.booking-card input[type="submit"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.booking-card input[value="Accept"] {
+    background-color: green;
+}
+
+.booking-card input[value="Reject"] {
+    background-color: red;
+}
+
+/* Khi di chuột vào nút */
+.booking-card input[type="submit"]:hover {
+    opacity: 0.8;
+}
+/* Định dạng nút "Trang Chủ" */
+button {
+    background-color: #007bff; /* Màu xanh dương */
+    color: white; /* Màu chữ trắng */
+    font-size: 18px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+/* Hiệu ứng khi di chuột vào */
+button:hover {
+    background-color: #0056b3;
+}
+

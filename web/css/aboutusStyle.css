@@ -1,0 +1,93 @@
+/* Định dạng chung */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Khung nội dung chính */
+.container {
+    max-width: 900px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+/* Tiêu đề */
+h1, h2 {
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Biểu tượng emoji */
+.emoji {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+/* Danh sách có icon */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+ul li::before {
+    content: "✔"; /* Icon check */
+    color: #28a745;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+/* Khối nội dung */
+.section {
+    background: #ffffff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-left: 5px solid #007bff;
+    border-radius: 5px;
+}
+
+/* Phần có viền màu xanh */
+.success {
+    border-left-color: #28a745;
+}
+
+/* Phần có viền màu cam */
+.warning {
+    border-left-color: #ffc107;
+}
+
+/* Phần có viền màu đỏ */
+.danger {
+    border-left-color: #dc3545;
+}
+
+/* Nút quay về */
+.back-button {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}

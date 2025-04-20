@@ -1,0 +1,51 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 26, 2025, 10:04:15 PM
+    Author     : bacda
+*/
+
+/* Định dạng tổng thể của trang booking detail */
+.booking-detail-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Thông báo */
+.booking-detail-container p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+/* Trạng thái */
+.booking-status {
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Màu sắc theo trạng thái */
+.booking-status.Confirmed {
+    background-color: #28a745; /* Xanh lá */
+    color: white;
+}
+
+.booking-status.Pending {
+    background-color: #ffc107; /* Vàng */
+    color: black;
+}
+
+.booking-status.Rejected {
+    background-color: #dc3545; /* Đỏ */
+    color: white;
+}
